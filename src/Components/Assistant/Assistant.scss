@@ -1,0 +1,33 @@
+.assistant {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: flex-start;
+  -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  background-color: white;
+  &__card {
+    display: flex;
+    &-photo {
+      width: 100px;
+      height: 100px;
+    }
+    &-description {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    &-name {
+      font-size: 30px;
+      font-weight: 400;
+      color: #444;
+      margin: 10px 0;
+    }
+    &-position {
+      color: #a4abb2;
+      font-size: 22px;
+    }
+  }
+}
