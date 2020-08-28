@@ -31,3 +31,21 @@
     }
   }
 }
+
+@media screen and (max-width: 526px) {
+  .assistant {
+    padding: 10px;
+    &__card {
+      &-photo {
+        width: 70px;
+        height: 70px;
+      }
+      &-name {
+        font-size: 20px;
+      }
+      &-position {
+        font-size: 12px;
+      }
+    }
+  }
+}

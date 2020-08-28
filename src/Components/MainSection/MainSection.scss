@@ -1,7 +1,7 @@
 .mainSection {
   overflow: hidden;
   position: relative;
-  margin: 50px auto 0;
+  margin: 0 auto;
   max-width: 1600px;
   padding: 10px 0;
   display: flex;
@@ -16,6 +16,7 @@
 }
 
 .chat {
+  margin-top: 50px;
   position: relative;
   width: 68%;
   &__question {
@@ -153,7 +154,7 @@
   &-active {
     background: #7b91ff;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     padding: 20px 10px;
     display: inline-block;
@@ -164,7 +165,7 @@
   }
   &-button {
     background-color: white;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     padding: 20px 10px;
     display: inline-block;
@@ -209,7 +210,7 @@
   top: 0;
   left: 105%;
   margin: 0 auto;
-  width: 280px;
+  width: 240px;
   display: flex;
   justify-content: space-between;
   font-size: 15px;
@@ -234,14 +235,29 @@
     justify-content: space-between;
   }
   &__input-text {
-    width: 70%;
+    width: 68%;
   }
   &__input-num {
-    width: 27%;
+    width: 30%;
   }
   &__input-zip {
     width: 100%;
   }
+}
+
+.mrtAlert {
+  top: 200px;
+}
+
+.get-cash {
+  margin-top: 10px;
+  width: 140px;
+}
+
+.incomeType-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -263,4 +279,85 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .chat {
+    &__question {
+      width: 70%;
+    }
+  }
+  .answer {
+    &__inner {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .coBorrowed-attention {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .coBorrowed-attention {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainSection {
+    &__description {
+      display: none;
+    }
+  }
+  .chat {
+    &__question {
+      width: 120%;
+    }
+  }
+  .answer {
+    &__inner {
+      width: 120%;
+      left: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chat {
+    &__question {
+      &-text {
+        & p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .answer {
+    &__input {
+      font-size: 15px;
+    }
+  }
+  .answer-amount {
+    &__button {
+      font-size: 15px;
+    }
+  }
+  .custom-select .custom-select-lg .mb-3 {
+    font-size: 15px;
+  }
+}
+
+.span-error {
+  opacity: 1;
+  color: red;
+  transition: 0.3s;
+}
+
+.span-no-error {
+  opacity: 0;
+  color: red;
+  transition: 0.3s;
 }
