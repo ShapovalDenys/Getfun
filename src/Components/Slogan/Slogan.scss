@@ -1,0 +1,37 @@
+.slogan {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: url(./img_cta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+  & h3 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  & span {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  &__link {
+    display: block;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s;
+    height: 40px;
+    line-height: 40px;
+    max-width: 220px;
+    margin: 50px auto 0;
+    font-size: 20px;
+    color: #2b2b2b;
+    text-align: center;
+    border-radius: 3px;
+  }
+}

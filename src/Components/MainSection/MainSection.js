@@ -9,6 +9,10 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const MainSection = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   /* Main state */
   const [name, setName] = useState("");
   const [surName, setSurName] = useState("");

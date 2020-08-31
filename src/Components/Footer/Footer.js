@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.scss';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -7,6 +8,50 @@ const Footer = () => {
   return (
   <footer className="footer">
     <div className="footer__inner">
+      <nav className="footer__nav">
+        <Link className="header__nav-link footer__nav-link" to="/home">Home</Link>
+
+        <Link className="header__nav-link footer__nav-link" to="/how-it-works">How it Works</Link>
+
+        <Link className="header__nav-link footer__nav-link" to="/rates-fees">Rates & Fees</Link>
+
+        <Link className="header__nav-link footer__nav-link" to="/lending-policy">Lending Policy</Link>
+
+        <Link className="header__nav-link footer__nav-link" to="/returning-customer">Returning Customer</Link>
+      </nav>
+
+        <div className="footer__select">
+          <div className="footer__select-inner">
+            <label className="footer__select-inner-label" htmlFor="in-1">Select Loan Amount</label>
+            <select defaultValue="1000$" id="in-1" className="custom-select custom-select-lg mb-3">
+              <option value="100$">100$</option>
+              <option value="200$">200$</option>
+              <option value="300$">300$</option>
+              <option value="400$">400$</option>
+              <option value="500$">500$</option>
+              <option value="600$">600$</option>
+              <option value="700$">700$</option>
+              <option value="800$">800$</option>
+              <option value="900$">900$</option>
+              <option value="1000$">1000$</option>
+              <option value="1500$">1500$</option>
+              <option value="2000$">2000$</option>
+              <option value="2500$-5000$">2500$-5000$</option>
+            </select>
+          </div>
+
+          <div className="footer__select-inner">
+            <label className="footer__select-inner-label" htmlFor="in-2">What is your zip code?</label>
+            <input type="number" className="custom-select custom-select-lg mb-3" placeholder="ZIP Code"></input>
+          </div>
+
+          <Link to="chat"><button className="home-header__select-button" >Get Started</button></Link>
+
+        </div>
+
+
+
+
       <p>
         Important Disclosures. Please Read Carefully.
       </p>
