@@ -23,7 +23,7 @@ const Faq = () => {
           <h3 className="faq__benefits-inner-text-article">Who qualifies for a personal loan?</h3>
           <div className={isOpenPersonalLoan ? "faq__block-text-decoration active" : "faq__block-text-decoration"}><div></div><div></div></div>
         </div>
-        <p className={isOpenPersonalLoan && "active"}>
+        <p className={isOpenPersonalLoan ? "active" : ""}>
           Most loan providers require you to have been employed in your current job for 90 days minimum. You also need to be 18 years of age and a US citizen or a permanent resident. Your income should be approximately $1,000 per month after tax. You will need to provide a valid email address, and home and work phone numbers.
         </p>
       </div>
@@ -33,7 +33,7 @@ const Faq = () => {
           <h3 className="faq__benefits-inner-text-article">How much can I borrow?</h3>
           <div className={isOpenHowMuchCanIBorrow ? "faq__block-text-decoration active" : "faq__block-text-decoration"}><div></div><div></div></div>
         </div>
-        <p className={isOpenHowMuchCanIBorrow && "active"}>
+        <p className={isOpenHowMuchCanIBorrow ? "active" : ""}>
           The amount a lender is ready to give you is determined by how the loan provider views a number of factors, including your state of residence and applicable legal restrictions (loans are not available in all states). Many of the lenders in our network loan between $100 and $5,000.
         </p>
       </div>
@@ -43,7 +43,7 @@ const Faq = () => {
           <h3 className="faq__benefits-inner-text-article">How will I receive the loan money?</h3>
           <div className={isOpenHowWillIReceive ? "faq__block-text-decoration active" : "faq__block-text-decoration"}><div></div><div></div></div>
         </div>
-        <p className={isOpenHowWillIReceive && "active"}>
+        <p className={isOpenHowWillIReceive ? "active" : ""}>
           Once the loan provider has approved your loan and you agree to accept all of your loan terms, your loan will then be deposited directly into your bank account, the process can be fully completed as soon as the next working day.
         </p>
       </div>
@@ -53,7 +53,7 @@ const Faq = () => {
           <h3 className="faq__benefits-inner-text-article">If I have bad credit, can I still get a loan?</h3>
           <div className={isOpenIfIHaveBadCredit ? "faq__block-text-decoration active" : "faq__block-text-decoration"}><div></div><div></div></div>
         </div>
-        <p className={isOpenIfIHaveBadCredit && "active"}>
+        <p className={isOpenIfIHaveBadCredit ? "active" : ""}>
           Personal loans are normally offered to people with a good credit record, although different loan providers have different underwriting policies. A good substitute for those with bad credit may be to seek out a short-term personal loan through a lender in our network.
         </p>
       </div>
@@ -63,7 +63,7 @@ const Faq = () => {
           <h3 className="faq__benefits-inner-text-article">How long does the process take?</h3>
           <div className={isOpenHowLongDoesTheProcessTake ? "faq__block-text-decoration active" : "faq__block-text-decoration"}><div></div><div></div></div>
         </div>
-        <p className={isOpenHowLongDoesTheProcessTake && "active"}>
+        <p className={isOpenHowLongDoesTheProcessTake ? "active" : ""}>
           It only takes several minutes to complete our secure form online. As soon as we receive your information, we start searching for an appropriate lender. You may have a response within minutes. Final approval and funds transfer can be completed in as little as 24 to 48 hours.
         </p>
       </div>

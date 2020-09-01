@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { getMoneyValue, setMoneyValue } from '../Store/Index';
 
 import './Home.scss';
 import Faq from '../FAQ/Faq';
 import Slogan from '../Slogan/Slogan';
+import Decoration from '../Decoration/Decoration';
 
-const Home = () => (
+const Home = () => {
+
+  const moneyValue = useSelector(getMoneyValue);
+  const dispatch = useDispatch();
+
+  return (
   <section className="home">
     <div className="home-header">
 
@@ -21,7 +29,7 @@ const Home = () => (
 
             <div className="home-header__form-input">
               <label className="home-header__form-input-label" htmlFor="in-1">Select Loan Amount</label>
-              <select defaultValue="1000$" id="in-1" className="custom-select custom-select-lg mb-3">
+              <select defaultValue={moneyValue} onChange={(e) => dispatch(setMoneyValue(e.target.value))} id="in-1" className="custom-select custom-select-lg mb-3">
                 <option value="100$">100$</option>
                 <option value="200$">200$</option>
                 <option value="300$">300$</option>
@@ -53,7 +61,6 @@ const Home = () => (
       </div>
 
     </div>
-
     <div className="block__info">
 
       <div className="block__info-inner">
@@ -72,7 +79,7 @@ const Home = () => (
       </div>
 
     </div>
-
+    <Decoration />
     <div className="trusted-section section-info">
       <h2 className="section-info__article">We are trusted</h2>
 
@@ -137,6 +144,7 @@ const Home = () => (
   <Faq />
   <Slogan />
   </section>
-);
+  );
+}
 
 export default Home;

@@ -1,9 +1,13 @@
 import React from 'react';
 import './Footer.scss';
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { getMoneyValue, setMoneyValue } from '../Store/Index';
 
 const Footer = () => {
 
+  const moneyValue = useSelector(getMoneyValue);
+  const dispatch = useDispatch();
 
   return (
   <footer className="footer">
@@ -23,7 +27,7 @@ const Footer = () => {
         <div className="footer__select">
           <div className="footer__select-inner">
             <label className="footer__select-inner-label" htmlFor="in-1">Select Loan Amount</label>
-            <select defaultValue="1000$" id="in-1" className="custom-select custom-select-lg mb-3">
+            <select defaultValue={moneyValue} onChange={(e) => dispatch(setMoneyValue(e.target.value))} id="in-1" className="custom-select custom-select-lg mb-3">
               <option value="100$">100$</option>
               <option value="200$">200$</option>
               <option value="300$">300$</option>

@@ -1,0 +1,20 @@
+.howItWorks {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 50px 50px;
+  &__list {
+    margin-left: 20px;
+  }
+  &__article {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .howItWorks {
+    padding: 0 20px 50px;
+  }
+}
