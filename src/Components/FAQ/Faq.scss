@@ -13,8 +13,9 @@
     margin-bottom: 20px;
     display: flex;
     &-img {
-      width: 50px;
-      height: 36px;
+      width: 31px;
+      height: 26px;
+      flex-shrink: 0;
       margin-right: 15px;
     }
     &-text {
